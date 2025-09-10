@@ -25,10 +25,10 @@
     header p {
       margin: 5px 0 0;
     }
-    .services {
+    .services, .gallery, .contact {
       padding: 30px;
     }
-    .services h2 {
+    .services h2, .gallery h2, .contact h2 {
       color: #ff66a3;
     }
     .services ul {
@@ -39,12 +39,19 @@
     .services ul li {
       margin: 10px 0;
     }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
     .contact {
       background: #ffe6f0;
-      padding: 20px;
-    }
-    .contact h2 {
-      color: #ff66a3;
     }
     .whatsapp-button {
       position: fixed;
@@ -76,6 +83,16 @@
       <li>🎨 Nail Art</li>
       <li>✨ Nail Repair</li>
     </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <img src="images/nails1.jpg" alt="Nail design 1">
+      <img src="images/nails2.jpg" alt="Nail design 2">
+      <img src="images/nails3.jpg" alt="Nail design 3">
+    </div>
+    <p>(Add more pictures in the <b>images/</b> folder)</p>
   </section>
 
   <section class="contact">
